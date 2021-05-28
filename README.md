@@ -57,7 +57,7 @@ let models: [Model] = [.cat, .banana]
 ```
 However, you are restricted in the number of types. I wanted this to work with an unknown array of arbitrary types. Obviously I can’t check the underlying model against infinite types, so the solution is to tie model and cell. Basically this:
 
-![RowModel](https://github.com/janodev/collection/blob/master/docs/CatViewCell.png)
+![RowModel](https://raw.githubusercontent.com/janodev/collection/main/docs/CatViewCell.png)
 
 Given a `Cat` model, the datasource gets the reuseIdentifier from the model:
 ```swift
@@ -86,8 +86,8 @@ What about using generics? well, generics in Swift are invariant so you can’t 
 
 The base header and cell won’t limit your design since you can use any view and model. Both are based on this design.
 
-![Provided Header](https://github.com/janodev/collection/blob/master/docs/provided-header.png)
+![Provided Header](https://raw.githubusercontent.com/janodev/collection/main/docs/provided-header.png)
 
 ### CollectionViewController
 
-![CollectionViewController](https://github.com/janodev/collection/blob/master/docs/CollectionViewController.png)
+![CollectionViewController](https://raw.githubusercontent.com/janodev/collection/main/docs/CollectionViewController.png)
